@@ -6,6 +6,11 @@ Free classroom learning every moment!
 > 本项目仅用于实现自主学习，将其用于不正当目的造成的一切后果与开发者无关。
 
 
+> **注意**
+> 本项目目前为内部测试项目，暂未向公众开放下载。敬请期待。要查看最终正式版发布时间，请移步至[项目进展](https://banclass.365sites.top/project/Project：项目进展)条目。
+
+
+
 ## 特色
 
 ### 简单易用
