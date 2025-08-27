@@ -29,7 +29,6 @@ Free classroom learning every moment!
 
 ### 缺点
 
--   只建议在有自动还原的电脑上运行；
 -   只支持在Windows8及更高版本的Windows系统上运行。
 
 ## 贡献项目
