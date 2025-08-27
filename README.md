@@ -7,7 +7,7 @@ Free classroom learning every moment!
 
 
 > **注意**
-> 本项目目前为内部测试项目，暂未向公众开放下载。敬请期待。要查看最终正式版发布时间，请移步至[项目进展](https://banclass.365sites.top/project/Project：项目进展)条目。
+> 本项目目前为测试项目，正式版敬请期待。要查看最终正式版发布时间，请移步至[项目进展](https://banclass.365sites.top/project/Project：项目进展)条目。
 
 
 
