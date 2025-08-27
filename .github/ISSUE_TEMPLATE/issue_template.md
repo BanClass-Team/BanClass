@@ -1,18 +1,84 @@
----
 name: Bug Report（问题漏洞报告）
-about: 如果需要报告问题或漏洞，请选择此选项
-title: "[DATE]: [FEATURE NAME]"
-labels: Bugs
-assignees: Winner365-China
----
-
+description: 如果你需要报告使用软件时遇到的问题，请选择此选项
+title: （将此栏【替换】为你的标题）
+labels: ["Bug", "待查看"]
+type: Bug
 body:
-- type: textarea
-id: what-happened
-attributes:
-label: 问题现象
-description: 请描述问题现象
-placeholder: Tell us what you see!
-value: 
-validations:
-required: true
+  - type: markdown
+    attributes:
+      value: |
+        欢迎进行 Bug 反馈。请在上面的文本框⬆️起一个能够清晰描述您的问题的标题，便于BanClass-Team解决您的问题。
+        
+        > [!important]
+        > 重要：如果要报告**多个 Bug**，请为每一个 Bug 开一个单独的issue（议题）。
+        >
+        > 请在接下来的表单中有效、精准地表述你的问题。如果不会表述，建议你先阅读《提问的智慧》（[直达链接](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)）。
+        
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 检查清单
+      description: 在开始反馈这个问题之前，请先检查：
+      options:
+        - label: 我已更新到最新版 测试，并看过 [最新提交](https://github.com/BanClass-Team/BanClass/commits)，确认这一 Bug 还没有修复。我也已在 Issues 中检索，确认这一 Bug 未被提交过，并且在 [官方文档](https://banclass.365sites.top) 中没有解决方案。
+          required: true
+        - label: 我已经仔细阅读过选项里的内容，并且知道这个选项不用勾选。
+        - label: 我已知晓并同意，此处仅用于汇报程序中存在的问题（关于其他非程序本身的问题应当在 Discussion 板块提出）。
+          required: true
+  - type: markdown
+    attributes: 
+      value: |
+        ### 报告Bug
+
+        在下方输入框中使用Markdown语法描述您遇到的 Bug。您可以附上截图、录屏、堆栈跟踪、日志等材料，便于BanClass-Team追踪问题。
+
+        > [!note]
+        > 上传附件时**请优先使用 GitHub 的附件系统上传附件**，将需要上传的附件粘贴或拖动到撰写区域即可上传。多个文件可打包为 zip 格式后上传。**不要**使用需要登陆或安装客户端才能接收附件的网盘（如\*度网盘、\*克网盘、1\*3网盘等）上传附件，以避免开发者因不具有对应网盘客户端或账户而延误问题诊断。
+  - type: textarea
+    id: excepted
+    attributes:
+      label: 期望的行为
+      description: 详细的描述你期望发生的行为，突出与目前（可能不正确的）行为的不同。
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 实际结果
+      description: 实际发生的行为。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: 重现步骤
+      description: |
+        详细描述要怎么操作才能再次触发这个 Bug。
+      placeholder: |
+        1. 首先……
+        2. 然后……
+        3. ……
+    validations:
+      required: true
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: 堆栈跟踪（可选）
+      description: 如果在遇到这个 Bug 时发生了崩溃（弹出崩溃提示），或者产生了错误日志，请将产生的堆栈跟踪信息粘贴到此处，便于BanClass-Team定位 Bug。
+      render: shell
+<!--  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 诊断信息
+      description: 在【应用设置】->【关于】->【查看诊断信息】中查看。请完整复制其中的诊断信息并粘贴到下面的文本输入框中，不要做任何更改。
+      render: plaintext
+    validations:
+      required: true -->
+  - type: checkboxes
+    id: revision
+    attributes:
+      label: 最后一步
+      description: 回顾您的回答
+      options:
+        - label: 我认为上述的描述已经足以详细、准确并易读，以确保开发人员能复现该问题。如果我的 issue 没有按照上述的要求填写，可能会被无条件关闭。
+          required: true
