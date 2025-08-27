@@ -2,7 +2,7 @@ name: Feature Request（功能请求）
 description: 如果需要提出一个新的功能，请使用此选项
 title: （将此栏【替换】为你的标题）
 labels: ["新功能", "待查看"]
-type: 特性
+type: enhancement
 body:
   - type: markdown
     attributes:
