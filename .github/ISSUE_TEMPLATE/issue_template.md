@@ -1,8 +1,10 @@
+---
 name: Bug Report（问题漏洞报告）
 description: 如果你需要报告使用软件时遇到的问题，请选择此选项
 title: （将此栏【替换】为你的标题）
 labels: ["Bug", "待查看"]
 type: Bug
+---
 body:
   - type: markdown
     attributes:
